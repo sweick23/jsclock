@@ -1,0 +1,71 @@
+
+:root{
+	--border: black;
+	--background: black; 
+	--hand: 30%;
+	--handColorH: black;
+  --handColorM: blue;
+  --handColorS: red;
+	--body: white;
+}
+
+
+body{
+	background: var(--body);
+}
+
+h1{
+	text-align: center;
+}
+
+
+.hour-hand{
+  margin-left: 3%;
+	margin-top: 50%;
+	width: 140px;
+	height: 1%;
+	background: var(--handColorH);
+	transform: rotate(90deg);
+	transform-origin: 100%;
+	transition: all 0.001s;
+	transition-timing-function: cubic-bezier(0.1, 2.2, .58, 1);
+}
+
+
+
+.minute-hand{
+  margin-top: -1%;
+  margin-left: 3%;
+	width: 140px;
+	height: .9%;
+	background: var(--handColorM);
+	transform: rotate(90deg);
+	transform-origin: 100%;
+	transition:  0.001s;
+	transition-timing-function: cubic-bezier(0.1, 2.2, .58, 1);
+}
+
+.clockFaceHour{
+	background: url('images/clock-1302406_640.png');
+  background-size: cover;
+  background-position: center;
+	margin-top: 10%;
+	margin-left: 38%;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	border: 3px solid var(--border);
+}
+
+.second-hand{
+  margin-top: -1%;
+	margin-left: 3%;
+	width: 140px;
+	height: .75%;
+	background: var(--handColorS);
+	transform: rotate(90deg);
+	transform-origin: 100%;
+	transition: all 0s;
+	transition-timing-function: cubic-bezier(0.1, 2.2, .58, 1);
+}
+
